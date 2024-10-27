@@ -1,34 +1,50 @@
-# React Native Environment with Docker and Expo - Initial Project Setup
+# Welcome to your Expo app 👋
 
-Este é um guia passo a passo para configurar um ambiente React Native com Docker e Expo.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Passo a Passo para Configurar o Ambiente
+## Get started
 
-1. **Clone o projeto**
+1. Install dependencies
+
    ```bash
-   sudo git clone git@github.com:silvadias/reactNativeExpoEnvironmentDefault.git
+   npm install
    ```
 
-2. **Execute o Docker Compose**
+2. Start the app
+
    ```bash
-   sudo docker-compose up -d
+    npx expo start
    ```
 
-3. **Acesse o contêiner do React Native**
-   ```bash
-   sudo docker exec -it reactExpo sh
-   ```
+In the output, you'll find options to open the app in a
 
-4. **Inicie o servidor Expo**
-   ```bash
-   npx expo start --tunnel
-   ```
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-5. **Instale o aplicativo Expo Go**
-   - Baixe o **Expo Go** na [Google Play Store](https://play.google.com) (para Android) ou na [App Store](https://www.apple.com/app-store/) (para iOS).
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-6. **Escaneie o código QR**
-   - Escaneie o código QR exibido no terminal usando o aplicativo Expo Go.
+## Get a fresh project
 
-7. **Desenvolva seu projeto React Native com Expo**
-   - Agora você está pronto para começar a desenvolver seu projeto React Native com Expo.
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
