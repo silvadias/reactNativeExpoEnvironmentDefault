@@ -82,7 +82,7 @@ docker exec -it nodeExpo sh
 Dentro do contêiner, execute o comando abaixo para iniciar o Expo e gerar o QR code:
 
 ```bash
-npx expo start --tunnel
+npm run start
 ```
 
 O Expo será iniciado, e um QR code será exibido no terminal. Esse QR code permitirá que você teste o aplicativo diretamente em um dispositivo físico.
