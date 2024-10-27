@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  node:
+    image: node:18-alpine
+    container_name: nodeExpo
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - 19000:19000
+      - 19001:19001
+      - 19002:19002
+      - 8081:8081
+    command: >
+      sh -c "
+          tail -f /dev/null && npm install 
+          "
+  jdk:
+    image: openjdk:11-jdk
+    container_name: jdk
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: tail -f /dev/null
