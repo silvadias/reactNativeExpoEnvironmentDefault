@@ -72,7 +72,7 @@ docker-compose up -d
 Após subir o contêiner, entre no contêiner `nodeExpo` para acessar o ambiente de desenvolvimento:
 
 ```bash
-docker exec -it nodeExpo bash
+docker exec -it nodeExpo sh
 ```
 
 ---
