@@ -1,0 +1,39 @@
+import React, { useState } from "react";
+import { Text, StyleSheet, View } from "react-native";
+
+const TextoAninhado = () => {
+    const [titulo, setTitulo] = useState("Texto do elemento filho");
+
+    const modificaTexto = () => {
+        setTitulo("Esse texto está sendo exibido pois o primeiro elemento de texto foi pressionado/tocado");
+    };
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.baseText}>
+                <Text style={styles.titulo} onPress={modificaTexto}>
+                    {titulo}
+                    {"\n"}
+                    {"\n"}
+                </Text>
+            </Text>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        marginTop: 50,
+        marginLeft: 10
+    },
+    baseText: {
+        fontFamily: "Verdana"
+    },
+    titulo: {
+        marginTop: 10,
+        fontSize: 18,
+        fontWeight: "bold"
+    }
+});
+
+export default TextoAninhado;
